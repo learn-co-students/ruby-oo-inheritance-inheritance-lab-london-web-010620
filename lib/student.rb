@@ -1,3 +1,15 @@
-class Student 
+class Student < User
 
+    def initialize
+        @knowledge = []
+    end 
+
+    def learn(argument)
+        @knowledge << argument
+    end 
+
+    def knowledge 
+        @knowledge 
+    end 
+    
 end
